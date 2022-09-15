@@ -1,20 +1,20 @@
-import { html, css, LitElement } from "lit";
-import { customElement, property } from "lit/decorators.js";
+import { html, css, LitElement } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 
-@customElement("main-app")
+@customElement('main-app')
 export class App extends LitElement {
   render() {
     return html`
-      <h1>Braver-UI-COMPONENT</h1>
+    <h1>FORM - LIB</h1>
       <braver-theme-provider>
         <braver-form>
           <braver-text-input
             formControlName="name"
-            label="Nome"
+            label="name"
           ></braver-text-input>
           <braver-text-input
             formControlName="surname"
-            label="Cognome"
+            label="surname"
           ></braver-text-input>
           <braver-button type="submit"></braver-button>
         </braver-form>
@@ -25,6 +25,6 @@ export class App extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "main-app": App;
+    'main-app': App;
   }
 }
